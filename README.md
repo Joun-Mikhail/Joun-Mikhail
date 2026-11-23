@@ -73,6 +73,15 @@ flowchart LR
 
 </details>
 
+### [serverless-notes-api](https://github.com/Joun-Mikhail/serverless-notes-api) · secure notes API on AWS
+
+[![CI](https://github.com/Joun-Mikhail/serverless-notes-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Joun-Mikhail/serverless-notes-api/actions/workflows/ci.yml)
+![Coverage](https://img.shields.io/badge/backend_coverage-99%25-3fb950)
+![Stack](https://img.shields.io/badge/Lambda_·_Cognito_·_DynamoDB_·_SAM-FF9900)
+[![Live demo](https://img.shields.io/badge/try_the_demo-live-8b5cf6)](https://d11c0a7q5fx9qi.cloudfront.net)
+
+Multi-user private notes app: Cognito authentication (OAuth 2.0 + PKCE), five Lambda handlers, DynamoDB with per-user isolation enforced by conditional writes. 193 tests, 99% coverage, deployed to eu-north-1.
+
 ### [Device Registry API](https://github.com/Joun-Mikhail/device-registry-serverless-api) · serverless REST API on AWS
 
 [![CI](https://github.com/Joun-Mikhail/device-registry-serverless-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Joun-Mikhail/device-registry-serverless-api/actions/workflows/ci.yml)
