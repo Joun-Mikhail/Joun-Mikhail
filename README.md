@@ -78,9 +78,35 @@ flowchart LR
 [![CI](https://github.com/Joun-Mikhail/serverless-notes-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Joun-Mikhail/serverless-notes-api/actions/workflows/ci.yml)
 ![Coverage](https://img.shields.io/badge/backend_coverage-99%25-3fb950)
 ![Stack](https://img.shields.io/badge/Lambda_·_Cognito_·_DynamoDB_·_SAM-FF9900)
+![Tests](https://img.shields.io/badge/tests-193_passing-3fb950)
 [![Live demo](https://img.shields.io/badge/try_the_demo-live-8b5cf6)](https://d11c0a7q5fx9qi.cloudfront.net)
 
-Multi-user private notes app: Cognito authentication (OAuth 2.0 + PKCE), five Lambda handlers, DynamoDB with per-user isolation enforced by conditional writes. 193 tests, 99% coverage, deployed to eu-north-1.
+Multi-user private notes app built the way real AWS workloads are built. Users sign in with Amazon Cognito (OAuth 2.0 + PKCE). Five Lambda handlers sit behind API Gateway. Each note is owned by one user — enforced atomically with DynamoDB conditional writes, not application code.
+
+- **Security by design.** Least-privilege IAM: one DynamoDB action per Lambda. JWT scopes (`notes/read`, `notes/write`) validated at API Gateway. Uniform error responses prevent user enumeration.
+- **Production-shaped ops.** Structured JSON logging, CloudWatch alarms, throttling, cursor pagination, optimistic locking, input validation at every layer.
+- **Quality gates.** 193 tests (99% coverage), mypy strict, ruff, cfn-lint, sam validate, Playwright browser tests, axe accessibility audit — all in CI.
+- **Deployed to AWS** (eu-north-1, 2026-11-17): 38/38 live API checks passed including authentication, isolation, CORS and throttling.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Joun-Mikhail/serverless-notes-api/main/evidence/screenshots/08-notes-dark-1280.png">
+  <img alt="Serverless Notes — notes list in dark mode" src="https://raw.githubusercontent.com/Joun-Mikhail/serverless-notes-api/main/evidence/screenshots/03-notes-1280.png" width="100%">
+</picture>
+
+<details>
+<summary><b>Architecture</b></summary>
+
+```mermaid
+flowchart LR
+    U["Browser · React"] -- "sign in (PKCE)" --> C["Cognito"]
+    U -- "HTTPS + Bearer token" --> G["API Gateway<br/>Cognito authorizer"]
+    G --> L["Lambda × 5<br/>Python 3.13"]
+    L --> D[("DynamoDB<br/>table + byUser GSI")]
+    L -. "logs · metrics" .-> W["CloudWatch"]
+```
+
+</details>
+
 
 ### [Device Registry API](https://github.com/Joun-Mikhail/device-registry-serverless-api) · serverless REST API on AWS
 
