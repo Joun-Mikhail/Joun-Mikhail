@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="136" viewBox="0 0 1200 136" role="img" aria-labelledby="title">
+<title id="title">At a glance: 400+ automated tests across 4 projects; 97% backend test coverage on CareerFlow; 8 CI/CD workflows; 0 long-lived AWS keys, deploys use GitHub OIDC.</title>
+<defs>
+  <linearGradient id="num" x1="0" x2="1"><stop offset="0" stop-color="#0886a8"/><stop offset="1" stop-color="#6d28d9"/></linearGradient>
+  <linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="#0886a8"/><stop offset="1" stop-color="#6d28d9"/></linearGradient>
+</defs>
+<style>
+  .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; } .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+  .up { animation: up .8s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  .grow { transform-box: fill-box; transform-origin: left; animation: grow 1.2s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+  <g class="up" style="animation-delay:0.0s">
+    <rect x="1" y="1" width="286" height="134" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+    <rect x="23" y="1" width="56" height="3" rx="1.5" fill="url(#bar)" class="grow" style="animation-delay:0.0s"/>
+    <text x="23" y="64" class="sans" font-size="42" font-weight="800" letter-spacing="-1" fill="url(#num)">400+</text>
+    <text x="23" y="94" class="sans" font-size="16" font-weight="600" fill="#1f2328">automated tests</text>
+    <text x="23" y="117" class="mono" font-size="12" fill="#59636e">across 4 projects</text>
+  </g>
+  <g class="up" style="animation-delay:0.1s">
+    <rect x="305" y="1" width="286" height="134" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+    <rect x="327" y="1" width="56" height="3" rx="1.5" fill="url(#bar)" class="grow" style="animation-delay:0.1s"/>
+    <text x="327" y="64" class="sans" font-size="42" font-weight="800" letter-spacing="-1" fill="url(#num)">97%</text>
+    <text x="327" y="94" class="sans" font-size="16" font-weight="600" fill="#1f2328">test coverage</text>
+    <text x="327" y="117" class="mono" font-size="12" fill="#59636e">CareerFlow backend</text>
+  </g>
+  <g class="up" style="animation-delay:0.2s">
+    <rect x="609" y="1" width="286" height="134" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+    <rect x="631" y="1" width="56" height="3" rx="1.5" fill="url(#bar)" class="grow" style="animation-delay:0.2s"/>
+    <text x="631" y="64" class="sans" font-size="42" font-weight="800" letter-spacing="-1" fill="url(#num)">8</text>
+    <text x="631" y="94" class="sans" font-size="16" font-weight="600" fill="#1f2328">CI/CD workflows</text>
+    <text x="631" y="117" class="mono" font-size="12" fill="#59636e">test · deploy · smoke · keep-warm</text>
+  </g>
+  <g class="up" style="animation-delay:0.3s">
+    <rect x="913" y="1" width="286" height="134" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+    <rect x="935" y="1" width="56" height="3" rx="1.5" fill="url(#bar)" class="grow" style="animation-delay:0.3s"/>
+    <text x="935" y="64" class="sans" font-size="42" font-weight="800" letter-spacing="-1" fill="url(#num)">0</text>
+    <text x="935" y="94" class="sans" font-size="16" font-weight="600" fill="#1f2328">long-lived AWS keys</text>
+    <text x="935" y="117" class="mono" font-size="12" fill="#59636e">deploys use GitHub OIDC</text>
+  </g>
+</svg>

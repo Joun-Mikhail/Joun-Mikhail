@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" role="img" aria-labelledby="title">
+<title id="title">Let's keep your systems running.</title>
+<defs>
+  <linearGradient id="fade" x1="0" x2="1">
+    <stop offset="0" stop-color="#0886a8" stop-opacity="0"/><stop offset=".2" stop-color="#0886a8"/>
+    <stop offset=".8" stop-color="#6d28d9"/><stop offset="1" stop-color="#6d28d9" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<style>
+  .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; } .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+  .trace { stroke-dasharray: 2600; stroke-dashoffset: 2600; animation: draw 5s linear infinite; }
+  @keyframes draw { 0% { stroke-dashoffset: 2600; } 70%,100% { stroke-dashoffset: 0; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<text x="600" y="36" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#1f2328">Let's keep your systems running.</text>
+<text x="600" y="60" text-anchor="middle" class="mono" font-size="12" fill="#59636e">uptime is a feature · alerts before users notice · runbooks over heroics</text>
+<path d="M0,108 L14,108 L20,102 L26,108 L32,108 L37,116 L43,74 L49,126 L55,108 L66,108 L74,99 L84,108 L150,108 L150,108 L164,108 L170,102 L176,108 L182,108 L187,116 L193,74 L199,126 L205,108 L216,108 L224,99 L234,108 L300,108 L300,108 L314,108 L320,102 L326,108 L332,108 L337,116 L343,74 L349,126 L355,108 L366,108 L374,99 L384,108 L450,108 L450,108 L464,108 L470,102 L476,108 L482,108 L487,116 L493,74 L499,126 L505,108 L516,108 L524,99 L534,108 L600,108 L600,108 L614,108 L620,102 L626,108 L632,108 L637,116 L643,74 L649,126 L655,108 L666,108 L674,99 L684,108 L750,108 L750,108 L764,108 L770,102 L776,108 L782,108 L787,116 L793,74 L799,126 L805,108 L816,108 L824,99 L834,108 L900,108 L900,108 L914,108 L920,102 L926,108 L932,108 L937,116 L943,74 L949,126 L955,108 L966,108 L974,99 L984,108 L1050,108 L1050,108 L1064,108 L1070,102 L1076,108 L1082,108 L1087,116 L1093,74 L1099,126 L1105,108 L1116,108 L1124,99 L1134,108 L1200,108" fill="none" stroke="#d0d7de" stroke-width="1.5"/>
+<path d="M0,108 L14,108 L20,102 L26,108 L32,108 L37,116 L43,74 L49,126 L55,108 L66,108 L74,99 L84,108 L150,108 L150,108 L164,108 L170,102 L176,108 L182,108 L187,116 L193,74 L199,126 L205,108 L216,108 L224,99 L234,108 L300,108 L300,108 L314,108 L320,102 L326,108 L332,108 L337,116 L343,74 L349,126 L355,108 L366,108 L374,99 L384,108 L450,108 L450,108 L464,108 L470,102 L476,108 L482,108 L487,116 L493,74 L499,126 L505,108 L516,108 L524,99 L534,108 L600,108 L600,108 L614,108 L620,102 L626,108 L632,108 L637,116 L643,74 L649,126 L655,108 L666,108 L674,99 L684,108 L750,108 L750,108 L764,108 L770,102 L776,108 L782,108 L787,116 L793,74 L799,126 L805,108 L816,108 L824,99 L834,108 L900,108 L900,108 L914,108 L920,102 L926,108 L932,108 L937,116 L943,74 L949,126 L955,108 L966,108 L974,99 L984,108 L1050,108 L1050,108 L1064,108 L1070,102 L1076,108 L1082,108 L1087,116 L1093,74 L1099,126 L1105,108 L1116,108 L1124,99 L1134,108 L1200,108" fill="none" stroke="url(#fade)" stroke-width="2" stroke-linejoin="round" class="trace"/>
+</svg>
